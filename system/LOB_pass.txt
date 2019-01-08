@@ -1,0 +1,11 @@
+level1 gate / gate
+level2 gremlin / hello bof world
+level3 cobolt / hacking exposed
+level4 goblin / hackers proof
+level5 orc / cantata
+level6 wolfman / love eyuna
+level7 darkelf / kernel crashed
+level8 orge / timewalker
+level9 troll / aspirin
+level10 vampire / music world
+level11 skeleton / shellcoder
